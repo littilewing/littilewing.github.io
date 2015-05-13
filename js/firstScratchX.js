@@ -15,7 +15,7 @@
     // ブロックと関数のひも付け
     var descriptor = {
         blocks: [
-            [' ', 'do_something %s', 'do_something', 'sample text'],
+            [' ', 'do_something %s', 'do_something', 'sample text by littlewing'],
         ]
     };
 
