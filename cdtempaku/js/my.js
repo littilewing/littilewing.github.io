@@ -36,16 +36,42 @@ $(function () {
 				});
 
 
-				$('.single-item').slick({
+				$('.single-item2').slick({
 					  autoplay: true,
-						autoplaySpeed: 2000,
-						adaptiveHeight: true,
-						dots: true,
-						infinite: true,
-						speed: 300,
+						autoplaySpeed: 5000,
+						//adaptiveHeight: true,
+						//dots: true,
+						//infinite: true,
+						//speed: 600,
 						centerMode: true,
-						variableWidth: true
+						//vertical:true,
+						//fade:false,
+						//easing:true,
+						variableWidth: true,
+						responsive:true,
+						accessibility:true,
 						});
+				
+						/*
+				$('.single-item3').slick({
+					  autoplay: true,
+						autoplaySpeed: 5000,
+						//adaptiveHeight: true,
+						//dots: true,
+						//infinite: true,
+						//speed: 600,
+						centerMode: true,
+						//vertical:true,
+						//fade:false,
+						//easing:true,
+						variableWidth: true,
+						responsive:true,
+						accessibility:true,
+						});
+				*/
+
+
+
 		}	, 
 		error: function(xhr, status, err) {
 			$('#content').html('エラー発生');
@@ -60,7 +86,7 @@ function makeEmbedTag(id,text){
 
 	var d = $("<div></div>",{
 		id:id,
-		"class":"project"
+		"class":"project " 
 	});
 	d.append("<h3 class=\"projecttitle\">"+text+"</h3>");
 

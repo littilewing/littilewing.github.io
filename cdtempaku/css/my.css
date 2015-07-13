@@ -1,9 +1,13 @@
 
-div.content2{
-	width:450px;
-	margin:100px;
+div#content2{
+	//width:90%;
+	//margin:100px;
+	height:600px;
+	background-color:#ffffff;
 }
+
 body{
 	  background-color:#9B9B9B;
+		margin:0px;
 	}
 
