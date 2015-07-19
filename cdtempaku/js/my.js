@@ -34,6 +34,7 @@ $(function () {
 
 					$("#content2").append(prjtag);
 				});
+			o/*
 
 
 				$('.single-item2').slick({
@@ -51,6 +52,7 @@ $(function () {
 						responsive:true,
 						accessibility:true,
 						});
+						*/
 				
 						/*
 				$('.single-item3').slick({
