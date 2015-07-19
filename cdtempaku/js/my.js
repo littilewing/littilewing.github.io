@@ -1,7 +1,7 @@
 
 var studioid = getUrlVars()["studioid"];//"1188244";
-if( !$studioid)
-				$studioid = "1188244";
+if( !studioid)
+		studioid = "1188244";
 
 var page = 1;
 
