@@ -6,8 +6,12 @@ div#content2{
 	background-color:#ffffff;
 }
 
+div.project{
+				float:left;
+}
 body{
 	  background-color:#9B9B9B;
 		margin:0px;
+		width:2000px;
 	}
 
