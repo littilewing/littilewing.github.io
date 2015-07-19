@@ -82,22 +82,39 @@ $(function () {
 	});//end $.ajax
 	//});
 	//
-	$.extend({
-		getParameter: function getParameter() {
-			/// <summary>
-			// URLのパラメーターを取得
-			/// </summary>
-			//									
-			var arg  = new Object;
-			var pair = location.search.substring(1).split('&');
-			for(i=0; pair[i]; i++) {
-				var kv = pair[i].split('=');
-				arg[kv[0]] = kv[1];
-			}			
-			return arg;
-		}	
-	});//end $.extend
 });
+
+
+
+
+
+
+function getUrlVars()
+{
+	var vars = [], hash;
+	var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+	for(var i = 0; i <hashes.length; i++)
+	{
+		hash = hashes[i].split('=');
+	  vars.push(hash[0]);
+	  vars[hash[0]] = hash[1];
+	}
+	return vars;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function makeEmbedTag(id,text){
 
