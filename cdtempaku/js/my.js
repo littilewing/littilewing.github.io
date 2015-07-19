@@ -34,7 +34,7 @@ $(function () {
 
 					$("#content2").append(prjtag);
 				});
-			o/*
+			/*
 
 
 				$('.single-item2').slick({
