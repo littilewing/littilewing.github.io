@@ -79,9 +79,24 @@ $(function () {
 			$('#content').html('エラー発生');
 		} // 通信失敗時は<div>要素にメッセージを表示
 
-	});
+	});//end $.ajax
 	//});
-
+	//
+	$.extend({
+		getParameter: function getParameter() {
+			/// <summary>
+			// URLのパラメーターを取得
+			/// </summary>
+			//									
+			var arg  = new Object;
+			var pair = location.search.substring(1).split('&');
+			for(i=0; pair[i]; i++) {
+				var kv = pair[i].split('=');
+				arg[kv[0]] = kv[1];
+			}			
+			return arg;
+		}	
+	});//end $.extend
 });
 
 function makeEmbedTag(id,text){
