@@ -2,7 +2,7 @@
 var studioid = getUrlVars()["studioid"];//"1188244";
 if( !studioid)
 		studioid = "1188244";
-var title = getUrlVars()["title"];
+var title = decodeURIComponent(getUrlVars()["title"]);
 
 var page = 1;
 
