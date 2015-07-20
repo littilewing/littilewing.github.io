@@ -2,6 +2,7 @@
 var studioid = getUrlVars()["studioid"];//"1188244";
 if( !studioid)
 		studioid = "1188244";
+var title = getUrlVars()["title"];
 
 var page = 1;
 
@@ -13,6 +14,8 @@ var projecturl_surffix = "/?autostart=true";
 $(function () {
 
 	$("#content").hide();
+	$("#title").text(title);
+
 
 	url = apiurl + studioid + "/" + page + "/";
 
