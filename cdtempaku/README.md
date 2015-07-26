@@ -12,3 +12,17 @@
 2. 取得した情報を順番に表示 
 3. 定期的に（一分に一回程度？)APIに接続して、新着の作品があるか確認
 4. 新着プロジェクトが存在したら、画面に追加
+
+### 引数
+|param|type|comment|
+|--|--|--|
+| studioid| int||
+|autoreload|bool||
+|reloadsec|int| |
+|callback|text|call back function name|
+
+
+| 横幅サイズ| int ||
+
+
+
