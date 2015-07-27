@@ -22,7 +22,9 @@ var cnt = 0;
 		console.log(reid);
 		$("#"+reid).hide("slow",function(){
 			$("#"+reid).remove();
-			$("#content2").scratchproject({projectid:id});
+			$("#content2").scratchproject({projectid:id,
+				autostart:true,
+			});
 		});
 	});
 
