@@ -32,31 +32,47 @@ var cnt = 0;
 		studioid:studioid ,
 	 	page:"1",
 		callback:function (target,projectid){
-
+			console.log("call");
 			cnt++;
 			console.log(cnt);
 			if(cnt <  maxcnt){
+							/*
 				$(target).scratchproject({projectid:projectid,
 					autostart:true,
 				});
+				*/
 			}
 
 
 			$("#smallimages").scratchproject({projectid:projectid,
 				imageonly:true,
+				callback:function(target,dom){
+					$('.multiple-items').slick('slickAdd',dom);
+				},
 			});
 
 
 		},//end callback	
- 	});
-	
-$(".multiple-items").slick({
-	infinite: true,
-  dots:true,
-  slidesToShow: 3,
-  slidesToScroll: 3
-});
+		endcallback:function(target){
 
+			console.log("endcallback");
+			/*
+			$(".multiple-items").slick({
+			// infinite: true,
+ 			slidesToShow: 3,
+ 			slidesToScroll: 3,
+			});
+			*/
+		},
+ 	});
+
+
+$(".multiple-items").slick({
+	// infinite: true,
+ 	slidesToShow: 5,
+ 	slidesToScroll: 5,
+});
+					
 })(jQuery);
 
 

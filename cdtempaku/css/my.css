@@ -4,12 +4,12 @@ div#content2{
 	//margin:100px;
 	padding:20px;
 	text-align:center;
-	min-height:400px;
+	min-height:600px;
 	background-color:#000000;
 //	clear:both;
 }
 
-div#smallimages{
+div#smallimages2{
 	clear:both;
 	float:none;
 	text-align:left;

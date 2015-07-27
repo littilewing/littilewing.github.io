@@ -20,6 +20,7 @@ $.fn.scratchproject = function(options){
 				width:"485",
 				height:"402",
 				"class":"project border_radius_32",
+				callback:null,
   }
  var setting = $.extend(defaults, options);
 
@@ -52,10 +53,15 @@ $.fn.scratchproject = function(options){
 			$(d).append($("<div/>",{"class":"owner"}).append(json.owner));
 			$(d).append($("<div/>",{"class":"description"}).append(json.description));
 
-			$(_this).prepend(d);
-			//$("#"+projectid).hide();
-			$("#"+projectid).show("slow");
+			if(callback){
+				setting.callback(_this,d);
+			}
+			else{
+				$(_this).prepend(d);
+				//$("#"+projectid).hide();
+				$("#"+projectid).show("slow");
 
+			}
 
 		}
 		else{
@@ -68,9 +74,16 @@ $.fn.scratchproject = function(options){
 			}	);
 			d = $("<div/>");
 			d.append(img);
-			$(_this).prepend(d);
+			if(callback){
+							setting.callback(_this,d);
+			}
+			else{
+				$(_this).prepend(d);
+			}
 
 		}
+		setting.callback(_this);
+
 	};
 	
 	$.getJSON(
@@ -105,6 +118,7 @@ $.fn.scratchstudio = function(options){
 				studioid:"1188244",
 				page: "1",
 				callback:callbackfunc,
+				endcallback:null,
   };
   var setting = $.extend(defaults, options);
 
@@ -136,6 +150,8 @@ $.fn.scratchstudio = function(options){
 
 
 			});//end each loop
+
+		setting.endcallback(_this);	
 		}	, //end success
 		error: function(xhr, status, err) {
 			$('#'+ dummyid).html('エラー発生');
@@ -144,7 +160,8 @@ $.fn.scratchstudio = function(options){
 		} // 通信失敗時は<div>要素にメッセージを表示
 
 	});//end $.ajax
-		
+	
+
     //メソッドチェーン対応(thisを返す)
     return(this);
 };
