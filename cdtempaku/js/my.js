@@ -50,7 +50,12 @@ var cnt = 0;
 		},//end callback	
  	});
 	
-
+$(".multiple-items").slick({
+	infinite: true,
+  dots:true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+});
 
 })(jQuery);
 

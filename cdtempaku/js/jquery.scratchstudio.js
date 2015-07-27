@@ -66,8 +66,9 @@ $.fn.scratchproject = function(options){
 					width:"160",
 					height:"160",
 			}	);
-
-			$(_this).prepend(img);
+			d = $("<div/>");
+			d.append(img);
+			$(_this).prepend(d);
 
 		}
 	};
