@@ -69,8 +69,8 @@ var cnt = 0;
 
 $(".multiple-items").slick({
 	// infinite: true,
- 	slidesToShow: 5,
- 	slidesToScroll: 5,
+ 	slidesToShow: 8,
+ 	slidesToScroll: 8,
 });
 					
 })(jQuery);
