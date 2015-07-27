@@ -20,7 +20,7 @@ $.fn.scratchproject = function(options){
 				width:"485",
 				height:"402",
 				"class":"project border_radius_32",
-				callback:null,
+				callback: null,
   }
  var setting = $.extend(defaults, options);
 
@@ -53,8 +53,10 @@ $.fn.scratchproject = function(options){
 			$(d).append($("<div/>",{"class":"owner"}).append(json.owner));
 			$(d).append($("<div/>",{"class":"description"}).append(json.description));
 
-			if(callback){
+			if(typeof setting.callback === "function"){
+							alert("ssss"+$(_this));
 				setting.callback(_this,d);
+
 			}
 			else{
 				$(_this).prepend(d);
@@ -82,7 +84,6 @@ $.fn.scratchproject = function(options){
 			}
 
 		}
-		setting.callback(_this);
 
 	};
 	
@@ -118,7 +119,6 @@ $.fn.scratchstudio = function(options){
 				studioid:"1188244",
 				page: "1",
 				callback:callbackfunc,
-				endcallback:null,
   };
   var setting = $.extend(defaults, options);
 
@@ -151,7 +151,6 @@ $.fn.scratchstudio = function(options){
 
 			});//end each loop
 
-		setting.endcallback(_this);	
 		}	, //end success
 		error: function(xhr, status, err) {
 			$('#'+ dummyid).html('エラー発生');

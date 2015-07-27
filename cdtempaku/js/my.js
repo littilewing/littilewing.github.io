@@ -36,11 +36,9 @@ var cnt = 0;
 			cnt++;
 			console.log(cnt);
 			if(cnt <  maxcnt){
-							/*
 				$(target).scratchproject({projectid:projectid,
 					autostart:true,
 				});
-				*/
 			}
 
 
@@ -53,17 +51,6 @@ var cnt = 0;
 
 
 		},//end callback	
-		endcallback:function(target){
-
-			console.log("endcallback");
-			/*
-			$(".multiple-items").slick({
-			// infinite: true,
- 			slidesToShow: 3,
- 			slidesToScroll: 3,
-			});
-			*/
-		},
  	});
 
 
