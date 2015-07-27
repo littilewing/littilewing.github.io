@@ -22,26 +22,31 @@ div.project{
 	margin:20px;
 	padding:20px;
 }
-h3.projecttitle,
+h3.projecttitle{
+	margin:0 32 8 16px;
+	font-size:1.8em;
+}
 div.owner,
 div.description{
 	margin:16 32 8 16px;
 }
+
 div.description{
 	display:none;
 }
 img.thumb{
-				margin:8px;
-				cursor:pointer;
+	margin:8px;
+	cursor:pointer;
 }
 body{
-	  background-color:yellow;
-		margin:0px;
-		width:100%;
-	}
+	background-color:yellow;
+	margin:0px;
+	width:100%;
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "ƒƒCƒŠƒI", Meiryo, Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;
+}
 
 header,footer{
-	height:10%;
+	height:4%;
 	//min-height:100px;
 	//padding:30px;
 }
