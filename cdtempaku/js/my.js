@@ -55,9 +55,11 @@ var cnt = 0;
 
 
 $(".multiple-items").slick({
-	// infinite: true,
+	infinite: true,
  	slidesToShow: 8,
- 	slidesToScroll: 8,
+ 	slidesToScroll: 1,
+	autoplay:true,
+	autoplaySpeed:3000,
 });
 					
 })(jQuery);
