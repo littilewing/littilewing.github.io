@@ -9,41 +9,43 @@ var cnt = 0;
 
 (function($) {
 
-				$("#smallimages img").live("click", function(){
+	$("#smallimages img").live("click", function(){
 
-								id = $(this).attr("id").replace(/thumb-/g,"");
+		id = $(this).attr("id").replace(/thumb-/g,"");
 
-								if( $("#" + id).attr("id")){
-									reid = id;
-								}else{
-									reid = $("#content2 div.project:last").attr("id");
+		if( $("#" + id).attr("id")){
+			reid = id;
+		}else{
+			reid = $("#content2 div.project:last").attr("id");
 
-								}
-								console.log(reid);
-								$("#"+reid).hide("slow",function(){
-									$("#"+reid).remove();
-									$("#content2").scratchproject({projectid:id});
-								});
-				});
+		}
+		console.log(reid);
+		$("#"+reid).hide("slow",function(){
+			$("#"+reid).remove();
+			$("#content2").scratchproject({projectid:id});
+		});
+	});
 
 	$("#content2").scratchstudio({
-					studioid:studioid ,
-				 	page:"1",
-					callback:function (target,projectid){
+		studioid:studioid ,
+	 	page:"1",
+		callback:function (target,projectid){
 
-						cnt++;
-						console.log(cnt);
-						if(cnt <  maxcnt){
-							$(target).scratchproject({projectid:projectid});
-						}
-
-
-						$("#smallimages").scratchproject({projectid:projectid,
-							imageonly:true,
-						});
+			cnt++;
+			console.log(cnt);
+			if(cnt <  maxcnt){
+				$(target).scratchproject({projectid:projectid,
+					autostart:true,
+				});
+			}
 
 
-					},//end callback	
+			$("#smallimages").scratchproject({projectid:projectid,
+				imageonly:true,
+			});
+
+
+		},//end callback	
  	});
 	
 
