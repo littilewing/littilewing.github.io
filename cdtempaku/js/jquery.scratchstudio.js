@@ -68,6 +68,8 @@ $.fn.scratchproject = function(options){
 		}
 		else{
 
+			console.log("imgid:" + setting.projectid);
+			
 			var img = $("<img />",{"class":"thumb border_radius_100",
 					src:"https:"+json.thumbnail,
 					id:"thumb-"+setting.projectid,

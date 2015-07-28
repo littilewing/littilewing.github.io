@@ -11,6 +11,8 @@ var cnt = 0;
 
 	$("#smallimages img").live("click", function(){
 
+		alert("click:" + $(this).attr("id"));
+		
 		id = $(this).attr("id").replace(/thumb-/g,"");
 
 		if( $("#" + id).attr("id")){
