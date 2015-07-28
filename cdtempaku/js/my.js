@@ -19,7 +19,7 @@ var cnt = 0;
 			reid = $("#content2 div.project:last").attr("id");
 
 		}
-		console.log(reid);
+		
 		$("#"+reid).hide("slow",function(){
 			$("#"+reid).remove();
 			$("#content2").scratchproject({projectid:id,
@@ -32,9 +32,9 @@ var cnt = 0;
 		studioid:studioid ,
 	 	page:"1",
 		callback:function (target,projectid){
-			console.log("call");
+		
 			cnt++;
-			console.log(cnt);
+		
 			if(cnt <  maxcnt){
 				$(target).scratchproject({projectid:projectid,
 					autostart:true,
@@ -60,6 +60,10 @@ $(".multiple-items").slick({
  	slidesToScroll: 1,
 	autoplay:true,
 	autoplaySpeed:3000,
+	swipeToSlide:true,
+	centerMode: true,
+  	variableWidth: true,
+
 });
 					
 })(jQuery);

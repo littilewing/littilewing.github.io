@@ -1,3 +1,13 @@
+a {
+	overflow: hidden;
+	float: left;
+}
+img:hover {
+	border: 6px solid #ff0000;
+}
+img:hover img {
+	margin: -6px;
+}
 
 div#main{
 	min-height:400px;
@@ -15,11 +25,8 @@ div#content2{
 	width:1200px;
 }
 
-div#smallimages2{
-	clear:both;
-	float:none;
-	text-align:left;
-	width:100%;
+div#smallimages{
+	height:200px;
 }
 div.project{
 	float:left;
