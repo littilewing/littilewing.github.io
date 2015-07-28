@@ -11,9 +11,12 @@ var cnt = 0;
 
 	$("#smallimages img").live("click", function(){
 
-		alert("click:" + $(this).attr("id"));
 		
-		id = $(this).attr("id").replace(/thumb-/g,"");
+		
+		//id = $(this).attr("id").replace(/thumb-/g,"");
+		id = $(this).attr("src").replace(/[^0-9]/g,"");
+
+		//alert("click:" + id +":"+ $(this).attr("src") ) ;
 
 		if( $("#" + id).attr("id")){
 			reid = id;
