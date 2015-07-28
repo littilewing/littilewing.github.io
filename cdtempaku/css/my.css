@@ -1,12 +1,18 @@
 
-div#content2{
+div#main{
+	min-height:400px;
 	width:100%;
-	//margin:100px;
-	padding:20px;
-	text-align:center;
-	min-height:600px;
 	background-color:#000000;
-//	clear:both;
+}
+div#content2{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	
+	//padding:20px;
+	min-height:400px;
+	background-color:#000000;
+	width:1200px;
 }
 
 div#smallimages2{
@@ -25,6 +31,8 @@ div.project{
 h3.projecttitle{
 	margin:0 32 8 16px;
 	font-size:1.4em;
+	white-space: nowrap;
+	overflow: hidden;
 }
 div.owner,
 div.description{
@@ -42,11 +50,15 @@ body{
 	background-color:yellow;
 	margin:0px;
 	width:100%;
-	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "ƒƒCƒŠƒI", Meiryo, Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;
+	font-family: "ãƒ’ãƒ©ã‚®ãƒè§’ã‚´ Pro W3", "Hiragino Kaku Gothic Pro", "ãƒ¡ã‚¤ãƒªã‚ª", Meiryo, Osaka, "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯", "MS PGothic", sans-serif;
 }
 
+h1#title{
+	text-align:center;
+	font-size:3.0em;
+}
 header,footer{
-	height:4%;
+	height:6%;
 	//min-height:100px;
 	//padding:30px;
 }
