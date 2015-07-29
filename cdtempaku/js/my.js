@@ -6,7 +6,7 @@ var studioid = getUrlVars()["studioid"];//"1188244";
 var title = decodeURIComponent(getUrlVars()["title"]);
 var maxcnt = 2;	
 var cnt = 0;
-var reloadtime = 60000;	//autoreload time.
+var reloadtime = 10000;	//autoreload time.
 
 (function($) {
 
@@ -20,6 +20,8 @@ var reloadtime = 60000;	//autoreload time.
 		 addProject(id);
 	});
 
+	$('#title').textillate({ in: { effect: 'rollIn' } });
+	
 	$("#content2").scratchstudio({
 		studioid:studioid ,
 	 	page:"1",
@@ -68,6 +70,8 @@ var reloadtime = 60000;	//autoreload time.
 		$("#_dummy_scratchstudio_"+studioid ).remove();
 		
 		console.log("reload:start" + reloadtime);
+		
+		
 		
 		$("#content2").scratchstudio({
 			studioid:studioid ,
