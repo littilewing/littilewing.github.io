@@ -75,9 +75,11 @@ $.fn.scratchproject = function(options){
 					id:"thumb-"+setting.projectid,
 					width:"160",
 					height:"160",
+					title:json.title,
 			}	);
-			d = $("<div/>");
-			d.append(img);
+			d = $("<div/>").append(img);
+			d.append($("<div/>",{"class":"stitle"}).append(json.title));
+			
 			if(callback){
 							setting.callback(_this,d);
 			}

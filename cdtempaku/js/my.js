@@ -61,13 +61,15 @@ var cnt = 0;
 
 $(".multiple-items").slick({
 	infinite: true,
- 	slidesToShow: 8,
- 	slidesToScroll: 1,
+ 	//slidesToShow: 6,
+ 	//slidesToScroll: 6,
 	autoplay:true,
 	autoplaySpeed:3000,
 	swipeToSlide:true,
-	centerMode: true,
+	//centerMode: true,
   	variableWidth: true,
+  	dots:true,
+  	arrows:true,
 
 });
 					
