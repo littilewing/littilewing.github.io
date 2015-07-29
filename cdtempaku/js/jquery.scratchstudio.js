@@ -14,7 +14,7 @@ $.fn.scratchproject = function(options){
 
 //引数を設定する
   var defaults = {
-				projectid:"1188244",
+				projectid:"562612",
 				autostart:false,
 				imageonly:false,
 				width:"485",
@@ -127,7 +127,7 @@ $.fn.scratchstudio = function(options){
   var setting = $.extend(defaults, options);
 
 	studioapiurl = studioapiurl.replace(/__id__/g,setting.studioid);
-	studioapiurl = studioapiurl.replace(/__page__/g,setting.page);
+	studioapiurl = studioapiurl.replace(/__page__/g,setting.page) + "?" + $.now();
 
 	dummyid = '_dummy_scratchstudio_'+setting.studioid;
 	console.log("access to:" + studioapiurl );
