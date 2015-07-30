@@ -54,9 +54,7 @@ $.fn.scratchproject = function(options){
 			$(d).append($("<div/>",{"class":"description"}).append(json.description));
 
 			if(typeof setting.callback === "function"){
-							alert("ssss"+$(_this));
 				setting.callback(_this,d);
-
 			}
 			else{
 				$(_this).prepend(d);
