@@ -6,7 +6,7 @@ var studioid = getUrlVars()["studioid"];//"1188244";
 var title = decodeURIComponent(getUrlVars()["title"]);
 var maxcnt = 2;	
 var cnt = 0;
-var reloadtime = 10000;	//autoreload time.
+var reloadtime = 300000;	//autoreload time.
 
 (function($) {
 
