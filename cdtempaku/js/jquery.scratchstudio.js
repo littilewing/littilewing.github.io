@@ -34,7 +34,8 @@ $.fn.scratchproject = function(options){
 			"class":setting.class, 
 		});
 
-		d.append("<h3 class=\"projecttitle\">" + json.title + "</h3>");
+		d.append("<h3 class=\"projecttitle\" title=\"[double click] to go original page.\">" + json.title + "</h3>");
+
 
 		if(setting.imageonly == false){
 			var emb = $("<iframe></iframe>",{

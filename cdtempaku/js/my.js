@@ -2,7 +2,10 @@
 /*
  * url params
  */
-var studioid = getUrlVars()["studioid"];//"1188244";
+var studioid = getUrlVars()["studioid"]; 
+if(studioid === undefined){
+				studioid = "1349344";
+}
 var title = decodeURIComponent(getUrlVars()["title"]);
 var maxcnt = 2;	
 var cnt = 0;
@@ -19,6 +22,18 @@ var reloadtime = 300000;	//autoreload time.
 
 		 addProject(id);
 	});
+
+	$("#title").live("dblclick",function(){
+					window.open().location.href= "https://scratch.mit.edu/studios/" + studioid + "/";
+
+	});
+
+	$(".projecttitle").live("dblclick",function(){
+					window.open().location.href=
+					"https://scratch.mit.edu/projects/" + $(this).parent().attr("id") + "/";
+
+	});
+
 
 	$('#title').textillate({ in: { effect: 'rollIn' } });
 	

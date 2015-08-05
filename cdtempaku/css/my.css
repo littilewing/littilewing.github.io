@@ -40,6 +40,7 @@ h3.projecttitle{
 	font-size:1.4em;
 	white-space: nowrap;
 	overflow: hidden;
+	cursor:pointer; 
 }
 div.owner,
 div.description{
@@ -66,7 +67,8 @@ h1#title{
 	font-size:2.2em;
 	margin-bottom:0px;
 	display: block;
-    text-align: center;
+  text-align: center;
+	cursor:pointer; 
 }
 .stitle{
 
