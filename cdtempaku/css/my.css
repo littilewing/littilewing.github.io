@@ -24,6 +24,9 @@ div#content2{
 	background-color:#000000;
 	width:1200px;
 }
+div#howto li{
+	margin-top: 1em;
+}
 
 div#smallimages{
 	height:200px;

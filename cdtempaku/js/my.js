@@ -10,6 +10,11 @@ var title = decodeURIComponent(getUrlVars()["title"]);
 var maxcnt = 2;	
 var cnt = 0;
 var reloadtime = 300000;	//autoreload time.
+var studioname="Scratch Studio Viewer";
+if(title != "undefined"){
+				studioname = title;
+}
+var clickflg = 0;
 
 (function($) {
 
@@ -23,6 +28,19 @@ var reloadtime = 300000;	//autoreload time.
 		 addProject(id);
 	});
 
+	$("#title").live("contextmenu",function(){
+					str = prompt("Studio title:",studioname);
+          if(str != "" && str != null){
+									studioname = str;
+									$("#title").text(studioname);
+					}
+
+
+					return false;
+
+
+	});
+
 	$("#title").live("dblclick",function(){
 					window.open().location.href= "https://scratch.mit.edu/studios/" + studioid + "/";
 
@@ -34,7 +52,7 @@ var reloadtime = 300000;	//autoreload time.
 
 	});
 
-
+	$("#title").text(studioname);
 	$('#title').textillate({ in: { effect: 'rollIn' } });
 	
 	$("#content2").scratchstudio({
@@ -44,7 +62,7 @@ var reloadtime = 300000;	//autoreload time.
 		
 			cnt++;
 		
-			if(cnt <=  maxcnt  ){
+			if(cnt <  maxcnt  ){
 				$(target).scratchproject({projectid:projectid,
 					autostart:true,
 				});
@@ -85,7 +103,6 @@ var reloadtime = 300000;	//autoreload time.
 		$("#_dummy_scratchstudio_"+studioid ).remove();
 		
 		console.log("reload:start" + reloadtime);
-		
 		
 		
 		$("#content2").scratchstudio({
