@@ -33,6 +33,7 @@ var clickflg = 0;
           if(str != "" && str != null){
 									studioname = str;
 									$("#title").text(studioname);
+									$("title").text(studioname);
 					}
 
 
