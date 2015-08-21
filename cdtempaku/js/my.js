@@ -55,6 +55,8 @@ var clickflg = 0;
 
 	$("#title").text(studioname);
 	$('#title').textillate({ in: { effect: 'rollIn' } });
+	$("title").text(studioname);
+
 	
 	$("#content2").scratchstudio({
 		studioid:studioid ,
