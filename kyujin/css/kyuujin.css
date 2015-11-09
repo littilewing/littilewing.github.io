@@ -1,0 +1,103 @@
+body{
+		background-color:#ffffff;	
+		margin:0 auto;
+		padding:0px;
+}
+h1{ font-size:1.4em; }
+h2{ font-size:1.2em; }
+h3{ font-size:1.1em; }
+
+header h1{
+		font-size:0.8em;
+		margin:2px;
+}
+footer{
+		background-color:#f5f5f5;
+		width:100%;
+		margin:0px;
+		padding:16px;
+}
+
+#topcopy h2{
+		font-size:1.2em;
+		font-weight:bold;
+		height:28px;
+}
+#container{
+		position: relative;	
+		height:100%;
+		min-height:100%;
+		margin:0px auto;
+}
+#xseachbox .panel-body{
+		background-image:url("../images/searchback.jpg");
+
+}
+header{
+		margin:0px auto;
+		height:120px;
+}
+section{
+		margin:0px auto;
+}
+.narrow{
+		min-width:300px;
+		max-width:728px;
+}
+.panel-half{
+		float:left;
+		min-width:324px;
+		width:324px;
+		margin:10px 20px;
+
+}
+.half{
+		float:left;
+		width:50%;
+		min-width:300px;
+}
+
+.searchbox{
+		height:84px;
+		padding:0 24px;
+}
+
+
+.ad{
+		margin:20px auto;
+		text-align:center;
+		width:100%;
+}
+
+/**
+	* search list
+	*/
+#leftcolumn{
+				//margin-right:40px;
+}
+#right{
+		//overflow:hidden;
+		//position:fixed;
+		display:none;
+}
+.spacer{
+	background-color:red;
+}
+.search{
+		min-width:300px;
+		max-width:728px;
+		margin:0 auto 40px;
+}
+.search th{
+		background-color:rgb(255, 255, 204);
+		color:#cc9933;
+		width:72px;
+		font-weight:normal;
+}
+.date{
+		min-width:40px;
+}
+.search h2 a {
+		display:block;
+		font-size:1.3em;
+}
