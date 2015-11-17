@@ -46,9 +46,10 @@ section{
 }
 .panel-half{
 		float:left;
-		min-width:300px;
-		width:324px;
-		margin:10px 20px;
+		min-width:342px;
+		//max-width:364px;
+		//width:300px;
+		margin:10px 10px;
 
 }
 .half{
