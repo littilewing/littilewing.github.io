@@ -28,10 +28,6 @@
 						</div>
 
 						<section class="narrow" id="detail" >
-						hoge
-						</section>
-
-						<section class="narrow" id="sumarry">
 						<div class="half detailcompany">
 								<h2>メジャーハウジング株式会社 </h2> 
 								<small>
@@ -42,26 +38,62 @@
 
 
 						</div>
+
 						<div class="half ">
 								<div class="panel panel-default ">
 										<div class="panel-body">
-												<img src="http://placehold.jp/300x240.png" />
+												<img src="http://placehold.jp/280x240.png" />
 										</div>
 								</div>
 
-								</section>
+						</div>
+						<div class="clearfix"></div>
 
-								<div class="clearfix"></div>
-								<section class="narrow" id="detail">
 
-								<div class="search" > 
-										<h2><span class="glyphicon glyphicon-search" aria-hidden="true"></span>募集要項 </h2>
-										<table class="table">
-												<tr>
+						<div class="search" > 
+								<h2><span class="glyphicon glyphicon-search" aria-hidden="true"></span>募集要項 </h2>
+								<table class="table">
+										<tr>
+												<th>社名</th>
+												<td>hoge hogeh hoge hoge hoge hoge  </td>
+												<th >登録日</th>
+												<td class="date">2015/4/16</td>
+										</tr>
+										<tr>
+												<th>雇用形態</th>
+												<td colspan="3">正社員＿中途</td>
+										</tr>
+										<tr>
+												<th>応募資格</th>
+												<td colspan="3">１８歳から35歳くらいまでの明るく元気でやる気まんまんの男女経験・知識は、一切関係ありません </td>
+										</tr>
+
+										<tr>
+												<th>雇用形態</th>
+												<td colspan="3">１８歳から35歳くらいまでの明るく元気でやる気まんまんの男女経験・知識は、一切関係ありません </td>
+										</tr>
+
+										<tr>
+												<th>雇用形態</th>
+												<td colspan="3">desc </td>
+										</tr>
+
+
+								</table>
+
+
+						</div>
+
+						<div class="navimenyu text-center">
+								<button type="button" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>この求人の詳細応募画面へ</button>
+						</div>
+
+						<div class="search"> 
+								<h2><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> 会社概要</h2>
+								<table class="table">
+										<tbody><tr>
 														<th>社名</th>
-														<td>hoge hogeh hoge hoge hoge hoge  </td>
-														<th >登録日</th>
-														<td class="date">2015/4/16</td>
+														<td colspan="3">hoge hogeh hoge hoge hoge hoge  </td>
 												</tr>
 												<tr>
 														<th>雇用形態</th>
@@ -83,64 +115,162 @@
 												</tr>
 
 
-										</table>
+								</tbody></table>
 
+
+						</div>
+
+						</section>
+
+						<section id="xseachbox" class="narrow">
+						<hr/>
+						<form method="get" id="seachform" action="list.html">
+								<div class="panel panel-default">
+										<div class="panel-heading">
+												<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+												求人情報検索	
+										</div>
+										<div class="panel-body ">
+												<div id="prefs" class="searchbox half">
+														<h3>都道府県</h3>
+														<select class="selectpicker" multiple data-max-options="10" title="選択してください">
+																<optgroup label="北海道・東北"  >
+																		<option value="1">北海道</option>
+																		<option value="2">青森</option>
+																		<option value="4">岩手</option>
+																		<option value="6">宮城</option>
+																		<option value="3">秋田</option>
+																		<option value="5">山形</option>
+																		<option value="7">福島</option>
+																</optgroup>
+																<optgroup label="関東地方"  >
+																		<option value="10">茨城</option>
+																		<option value="8">栃木</option>
+																		<option value="9">群馬</option>
+																		<option value="12">埼玉</option>
+																		<option value="11">千葉</option>
+																		<option value="13" selected="">東京</option>
+																		<option value="15">神奈川</option>
+																</optgroup>
+																<optgroup label="中部地方"  >
+																		<option value="22">新潟</option>
+																		<option value="23">富山</option>
+																		<option value="24">石川</option>
+																		<option value="25">福井</option>
+																		<option value="20">山梨</option>
+																		<option value="21">長野</option>
+																		<option value="18">岐阜</option>
+																		<option value="16">静岡</option>
+																		<option value="17">愛知</option>
+																</optgroup>
+																<optgroup label="近畿地方"  >
+																		<option value="19">三重</option>
+																		<option value="26">滋賀</option>
+																		<option value="29">京都</option>
+																		<option value="28">奈良</option>
+																		<option value="30">大阪</option>
+																		<option value="31">兵庫</option>
+																		<option value="27">和歌山</option>
+																</optgroup>
+																<optgroup label="中国地方"  >
+																		<option value="32">鳥取</option>
+																		<option value="33">島根</option>
+																		<option value="34">岡山</option>
+																		<option value="35">広島</option>
+																		<option value="36">山口</option>
+																</optgroup>
+																<optgroup label="四国地方"  >
+																		<option value="38">徳島</option>
+																		<option value="39">香川</option>
+																		<option value="40">愛媛</option>
+																		<option value="37">高知</option>
+																</optgroup>
+																<optgroup label="九州・沖縄地方" >
+																		<option value="41">福岡</option>
+																		<option value="42">佐賀</option>
+																		<option value="43">長崎</option>
+																		<option value="44">熊本</option>
+																		<option value="46">大分</option>
+																		<option value="45">宮崎</option>
+																		<option value="47">鹿児島</option>
+																		<option value="48">沖縄</option>
+																</optgroup>
+																<optgroup label="その他"  >
+																		<option value="49">海外勤務</option>
+																</optgroup>
+
+														</select>
+												</div>
+
+												<div id="jobs" class="searchbox half">
+														<h3>職種</h3>
+														<select class="selectpicker" title="指定しない" multiple>
+
+																<option value="1">正社員 新卒</option>
+																<option value="2">正社員 中途</option>
+																<option value="3">契約社員</option>
+																<option value="4">派遣社員</option>
+																<option value="5">アルバイト・パート</option>
+																<option value="6">短期バイト</option>
+																<option value="8">在宅ワーク</option>
+																<option value="9">業務請負</option>
+
+														</select>
+												</div>
+
+												<div class="clearfix" ></div>
+
+
+												<div class="searchbox">
+														<h3>検索キーワード </h3>
+														<div class="input-group">
+																<input type="text" class="form-control" name="search"  value="" placeholder="複数のキーワードはスペースで区切って下さい"/>
+																<span class="input-group-btn">
+																		<button type="button" class="btn btn-default" id="seachbtn" >
+																				<span class="glyphicon glyphicon-search" aria-hidden="true"></span>	検索 
+																		</button>
+																</span>
+
+														</div>
+												</div>
+										</div>
+
+										<div class="panel-footer hidden-xs">
+												<select name="words" >
+														<option >全てのキーワードを含む</option>
+														<option> いずれかのキーワードを含む</option>
+												</select>
+												<select name="limit">
+														<option>30件表示</option>
+														<option>75件表示</option>
+														<option>100件表示</option>
+														<option>1件表示</option>
+												</select>
+
+
+										</div>
 
 								</div>
+						</form>
+						</section>
 
-								<div class="navimenyu text-center">
-										<button type="button" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>この求人の詳細応募画面へ</button>
-							</div>
+
 	
-								<div class="search"> 
-										<h2><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> 会社概要</h2>
-										<table class="table">
-												<tbody><tr>
-																<th>社名</th>
-																<td colspan="3">hoge hogeh hoge hoge hoge hoge  </td>
-														</tr>
-														<tr>
-																<th>雇用形態</th>
-																<td colspan="3">正社員＿中途</td>
-														</tr>
-														<tr>
-																<th>応募資格</th>
-																<td colspan="3">１８歳から35歳くらいまでの明るく元気でやる気まんまんの男女経験・知識は、一切関係ありません </td>
-														</tr>
+						<div class="clearfix"></div>
+						<footer class="text-center">
+						<p>当サイトの掲載内容に関して、当方は一切の責任を負いかねます。</p>
+						<p> Copyright (C)1996- 2015 <A href="syozai.html">Centerice Co.Ltd.</A> All Rights Reserved</p>
+						</footer>
 
-														<tr>
-																<th>雇用形態</th>
-																<td colspan="3">１８歳から35歳くらいまでの明るく元気でやる気まんまんの男女経験・知識は、一切関係ありません </td>
-														</tr>
+				</div><!-- end container -->
 
-														<tr>
-																<th>雇用形態</th>
-																<td colspan="3">desc </td>
-														</tr>
+				<script src="http://code.jquery.com/jquery.js"></script>
+				<script src="js/bootstrap.min.js"></script>
+				<script src="js/bootstrap-select.min.js"></script>
+				<script src="js/kyuujin.js" ></script>
 
 
-										</tbody></table>
-
-
-								</div>
-
-							</section>
-
-								<div class="clearfix"></div>
-								<footer>
-								<p>当サイトの掲載内容に関して、当方は一切の責任を負いかねます。</p>
-								<p> Copyright (C)1996- 2015 <A href="syozai.html">Centerice Co.Ltd.</A> All Rights Reserved</p>
-								</footer>
-
-						</div><!-- end container -->
-						<script src="http://code.jquery.com/jquery.js"></script>
-						<script src="js/bootstrap.min.js"></script>
-						<script src="js/bootstrap-select.min.js"></script>
-
-						<script src="js/kyuujin.js" ></script>
-
-
-				</body>
-		</html>
+		</body>
+</html>
 
 
