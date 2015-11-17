@@ -31,7 +31,7 @@
 
 						<section id="xseachbox" class="narrow">
 
-						<form method="post">
+						<form method="post" id="seachform" action="list.html">
 								<div class="panel panel-default">
 										<div class="panel-heading">
 												<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
@@ -41,70 +41,70 @@
 												<div id="prefs" class="searchbox half">
 														<h3>都道府県</h3>
 														<select class="selectpicker" multiple data-max-options="10" title="選択してください">
-																 <optgroup label="北海道・東北"  >
-																<option value="1">北海道</option>
-																<option value="2">青森</option>
-																<option value="4">岩手</option>
-																<option value="6">宮城</option>
-																<option value="3">秋田</option>
-																<option value="5">山形</option>
-																<option value="7">福島</option>
-														</optgroup>
-														<optgroup label="関東地方"  >
-																<option value="10">茨城</option>
-																<option value="8">栃木</option>
-																<option value="9">群馬</option>
-																<option value="12">埼玉</option>
-																<option value="11">千葉</option>
-																<option value="13" selected="">東京</option>
-																<option value="15">神奈川</option>
-														</optgroup>
-														<optgroup label="中部地方"  >
-																<option value="22">新潟</option>
-																<option value="23">富山</option>
-																<option value="24">石川</option>
-																<option value="25">福井</option>
-																<option value="20">山梨</option>
-																<option value="21">長野</option>
-																<option value="18">岐阜</option>
-																<option value="16">静岡</option>
-																<option value="17">愛知</option>
-														</optgroup>
-														<optgroup label="近畿地方"  >
-																<option value="19">三重</option>
-																<option value="26">滋賀</option>
-																<option value="29">京都</option>
-																<option value="28">奈良</option>
-																<option value="30">大阪</option>
-																<option value="31">兵庫</option>
-																<option value="27">和歌山</option>
-														</optgroup>
-														<optgroup label="中国地方"  >
-																<option value="32">鳥取</option>
-																<option value="33">島根</option>
-																<option value="34">岡山</option>
-																<option value="35">広島</option>
-																<option value="36">山口</option>
-														</optgroup>
-														<optgroup label="四国地方"  >
-																<option value="38">徳島</option>
-																<option value="39">香川</option>
-																<option value="40">愛媛</option>
-																<option value="37">高知</option>
-														</optgroup>
-														<optgroup label="九州・沖縄地方" >
-																<option value="41">福岡</option>
-																<option value="42">佐賀</option>
-																<option value="43">長崎</option>
-																<option value="44">熊本</option>
-																<option value="46">大分</option>
-																<option value="45">宮崎</option>
-																<option value="47">鹿児島</option>
-																<option value="48">沖縄</option>
-														</optgroup>
-														<optgroup label="その他"  >
-																<option value="49">海外勤務</option>
-														</optgroup>
+																<optgroup label="北海道・東北"  >
+																		<option value="1">北海道</option>
+																		<option value="2">青森</option>
+																		<option value="4">岩手</option>
+																		<option value="6">宮城</option>
+																		<option value="3">秋田</option>
+																		<option value="5">山形</option>
+																		<option value="7">福島</option>
+																</optgroup>
+																<optgroup label="関東地方"  >
+																		<option value="10">茨城</option>
+																		<option value="8">栃木</option>
+																		<option value="9">群馬</option>
+																		<option value="12">埼玉</option>
+																		<option value="11">千葉</option>
+																		<option value="13" selected="">東京</option>
+																		<option value="15">神奈川</option>
+																</optgroup>
+																<optgroup label="中部地方"  >
+																		<option value="22">新潟</option>
+																		<option value="23">富山</option>
+																		<option value="24">石川</option>
+																		<option value="25">福井</option>
+																		<option value="20">山梨</option>
+																		<option value="21">長野</option>
+																		<option value="18">岐阜</option>
+																		<option value="16">静岡</option>
+																		<option value="17">愛知</option>
+																</optgroup>
+																<optgroup label="近畿地方"  >
+																		<option value="19">三重</option>
+																		<option value="26">滋賀</option>
+																		<option value="29">京都</option>
+																		<option value="28">奈良</option>
+																		<option value="30">大阪</option>
+																		<option value="31">兵庫</option>
+																		<option value="27">和歌山</option>
+																</optgroup>
+																<optgroup label="中国地方"  >
+																		<option value="32">鳥取</option>
+																		<option value="33">島根</option>
+																		<option value="34">岡山</option>
+																		<option value="35">広島</option>
+																		<option value="36">山口</option>
+																</optgroup>
+																<optgroup label="四国地方"  >
+																		<option value="38">徳島</option>
+																		<option value="39">香川</option>
+																		<option value="40">愛媛</option>
+																		<option value="37">高知</option>
+																</optgroup>
+																<optgroup label="九州・沖縄地方" >
+																		<option value="41">福岡</option>
+																		<option value="42">佐賀</option>
+																		<option value="43">長崎</option>
+																		<option value="44">熊本</option>
+																		<option value="46">大分</option>
+																		<option value="45">宮崎</option>
+																		<option value="47">鹿児島</option>
+																		<option value="48">沖縄</option>
+																</optgroup>
+																<optgroup label="その他"  >
+																		<option value="49">海外勤務</option>
+																</optgroup>
 
 														</select>
 												</div>
@@ -133,7 +133,7 @@
 														<div class="input-group">
 																<input type="text" class="form-control" name="search"  value="" placeholder="複数のキーワードはスペースで区切って下さい"/>
 																<span class="input-group-btn">
-																		<button type="button" class="btn btn-default">
+																		<button type="button" class="btn btn-default" id="seachbtn" >
 																				<span class="glyphicon glyphicon-search" aria-hidden="true"></span>	検索 
 																		</button>
 																</span>
@@ -216,6 +216,7 @@
 				<script src="http://code.jquery.com/jquery.js"></script>
 				<script src="js/bootstrap.min.js"></script>
 				<script src="js/bootstrap-select.min.js"></script>
+				<script src="js/kyuujin.js" ></script>
 
 		</body>
 </html>
