@@ -130,12 +130,12 @@ section{
 }
 @media  (max-width: 640px) {
 
-		.panel-half{
+.panel-half{
 				float:left;
 				min-width:90%;
 
-	}
-	.searchbox{
+}
+.searchbox{
 			height:84px;
 			padding:0 6px;
 }
