@@ -24,7 +24,10 @@ footer{
 		height:28px;
 }
 #topcopy p{
-		margin:2%;
+		padding-left: 4%;
+		padding-right: 4%;
+
+
 }
 #container{
 		position: relative;	
