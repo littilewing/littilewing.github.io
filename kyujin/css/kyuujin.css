@@ -75,7 +75,7 @@ section{
 .pagetop {
 		display: none;
 		position: fixed;
-		bottom: 30px;
+		bottom: 8px;
 		right: 30px;
 	}
 	.pagetop a {
