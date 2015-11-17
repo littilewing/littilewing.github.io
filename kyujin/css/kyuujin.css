@@ -41,7 +41,7 @@ footer{
 }
 header{
 		margin:0px auto;
-		height:120px;
+		height:102px;
 }
 section{
 		margin:0px auto;
@@ -52,7 +52,7 @@ section{
 }
 .panel-half{
 		float:left;
-		min-width:316px;
+		min-width:324px;
 		max-widht:600px;
 		//width:300px;
 		margin:10px 2%;
