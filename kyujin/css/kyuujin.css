@@ -46,8 +46,8 @@ section{
 }
 .panel-half{
 		float:left;
-	min-width:316px;
-	max-widht:600px;
+		min-width:316px;
+		max-widht:600px;
 		//width:300px;
 		margin:10px 2%;
 
@@ -73,7 +73,7 @@ section{
 /**
 	* search list
 	*/
-#leftcolumn{
+		#leftcolumn{
 				//margin-right:40px;
 }
 #right{
@@ -82,7 +82,7 @@ section{
 		display:none;
 }
 .spacer{
-	background-color:red;
+		background-color:red;
 }
 .search{
 		min-width:300px;
@@ -101,4 +101,14 @@ section{
 .search h2 a {
 		display:block;
 		font-size:1.3em;
+}
+
+@media  (max-width: 640px) {
+
+		.panel-half{
+				float:left;
+				min-width:90%;
+
+	}
+.
 }
