@@ -26,8 +26,6 @@ footer{
 #topcopy p{
 		padding-left: 4%;
 		padding-right: 4%;
-
-
 }
 #container{
 		position: relative;	
@@ -78,8 +76,8 @@ section{
 /**
 	* search list
 	*/
-.seachnum{
-padding-left:20px;
+		.seachnum{
+				padding-left:20px;
 }
 
 .search{
@@ -101,17 +99,17 @@ padding-left:20px;
 		font-size:1.3em;
 }
 #sumarry{
-//		max-width:500px;
-//height:120px;
+		//		max-width:500px;
+		//height:120px;
 }
 /**
 	* detail
 	*/
 
 
-#detail h2{
-font-size:1.6em;
-color:#777;
+		#detail h2{
+				font-size:1.6em;
+				color:#777;
 }
 @media  (max-width: 640px) {
 
@@ -132,7 +130,7 @@ color:#777;
 }
 
 .detailcompany{
- padding-left:4px;
+		padding-left:4px;
 }
 
 }
