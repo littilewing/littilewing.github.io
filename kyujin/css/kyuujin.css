@@ -23,6 +23,9 @@ footer{
 		font-weight:bold;
 		height:28px;
 }
+#topcopy p{
+		margin:2%;
+}
 #container{
 		position: relative;	
 		height:100%;
