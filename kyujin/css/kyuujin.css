@@ -72,36 +72,35 @@ section{
 		text-align:center;
 		width:100%;
 }
-
 .pagetop {
 		display: none;
 		position: fixed;
 		bottom: 30px;
-		right: 55px;
-}
-.pagetop a {
+		right: 30px;
+	}
+	.pagetop a {
 				display: block;
 				width: 50px;
 				height: 50px;
-				background-color:#999; 
+				background-color: #666;
+				border-radius: 50px;
 				text-align: center;
 				color: #fff;
 				font-size: 24px;
 				text-decoration: none;
 				line-height: 50px;
-}
-
+	}
 /**
-	* search list
+* search list
 */
 .seachnum{
 				padding-left:20px;
 }
 
 .search{
-				min-width:300px;
-				max-width:728px;
-				margin:0 auto 40px;
+		min-width:300px;
+		max-width:728px;
+		margin:0 auto 40px;
 }
 .search th{
 		background-color:rgb(255, 255, 204);
